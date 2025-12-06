@@ -4,12 +4,13 @@ import {
   COMPONENT_ADAPTERS,
   RUNTIME_COMPONENTS,
 } from "./COMPONENT_REGISTRY/registery";
+import { PageComponent } from "@/types/runtimeTypes";
 
-export default function PageRenderer({ sections }: { sections: any[] }) {
+export default function PageRenderer({ sections }: { sections: PageComponent[] }) {
   return (
     <>
       {sections.map((section, idx) => {
-        const Component = RUNTIME_COMPONENTS[section.type];   // FIXED
+        const Component = RUNTIME_COMPONENTS[section.type];   
         if (!Component)
           return (
             <div key={idx} className="p-4 bg-red-50 text-red-700">
@@ -17,7 +18,7 @@ export default function PageRenderer({ sections }: { sections: any[] }) {
             </div>
           );
 
-        const adapter = COMPONENT_ADAPTERS[section.type];     // FIXED
+        const adapter = COMPONENT_ADAPTERS[section.type];     
         const finalProps = adapter ? adapter(section.props) : section.props;
 
         return (
