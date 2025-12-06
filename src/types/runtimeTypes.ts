@@ -1,6 +1,4 @@
-// types/page.ts
 
-// Generic props type for any component (avoiding 'any')
 export type ComponentProps = Record<string, unknown>;
 
 // Single component type
@@ -25,4 +23,11 @@ export interface PageData {
   id: string;
   meta: PageMeta;
   components: PageComponent[];
+}
+
+export interface BaseSchema<P> {
+  id: string;
+  type: string;
+  variant?: string;
+  props: P;
 }

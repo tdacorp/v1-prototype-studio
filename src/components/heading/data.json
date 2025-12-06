@@ -1,0 +1,66 @@
+[
+  {
+    "type": "heading",
+    "level": 1,
+    "content": "Get started in minutes",
+    "color": "#0F172A",                
+    "align": "left",
+    "weight": "bold",
+    "margin": "1.5rem 0",
+    "lineHeight": "3rem",
+    "letterSpacing": "tight",
+    "transform": "lowercase"
+  },
+  {
+    "type": "heading",
+    "level": 2,
+    "content": "Get started in minutes",
+    "color": "#1E293B",
+    "align": "left",
+    "weight": "semibold",
+    "italic": true,
+    "margin": "1rem 0",
+    "transform": "capitalize"
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "content": "Get started in minutes",
+    "color": "#334155",
+    "align": "left",
+    "weight": "medium",
+    "underline": true,
+    "margin": "0.75rem 0",
+    "letterSpacing": "wide"
+  },
+  {
+    "type": "heading",
+    "level": 4,
+    "content": "Get started in minutes",
+    "color": "#475569",
+    "align": "left",
+    "weight": "medium",
+    "underline": false,
+    "margin": "0.5rem 0"
+  },
+  {
+    "type": "heading",
+    "level": 5,
+    "content": "Get started in minutes",
+    "color": "#64748B",
+    "align": "left",
+    "weight": "medium",
+    "underline": false,
+    "margin": "0.25rem 0"
+  },
+  {
+    "type": "heading",
+    "level": 6,
+    "content": "Get started in minutes",
+    "color": "#94A3B8",
+    "align": "left",
+    "weight": "medium",
+    "underline": false,
+    "margin": "0.25rem 0"
+  }
+]
