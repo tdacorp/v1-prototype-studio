@@ -237,7 +237,7 @@ export interface CardConfig {
 
 export interface CardSchema {
   id: string;
-  type: "Card";
+  type: string;
   status: componentStatus;
   variant: CardVariant;
   props: CardProps;

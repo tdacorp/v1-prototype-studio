@@ -25,7 +25,7 @@ console.log(data?.getPage.components)
   if (!data?.getPage) return <p>404 - Page not found</p>;
 
   return (
-    <main className="min-h-screen mx-auto py-8">
+    <main className="min-h-screen mx-auto">
       <PageRenderer sections={data.getPage.components} />
     </main>
   );

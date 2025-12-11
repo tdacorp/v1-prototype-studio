@@ -1,9 +1,12 @@
 import { VariantRenderer } from "./variants/VariantRenderer";
+import { CardSchema } from "@/components/card/types";
 
-export const CardGallery = () => (
-  <div className="grid grid-cols-1 md:grid-cols-1 ">
-    {/* {cards.map(card =>
-      <VariantRenderer key={card.id} variant={card.variant.value} card={card} />
-    )} */}
-  </div>
-);
+export const Card = ({ schema }: { schema: CardSchema }) => {
+  console.log("CARD : ", schema)
+  const safeCard = { ...schema } as any;
+  return (
+    <div>
+      <VariantRenderer variant={schema.variant} card={safeCard} />
+    </div>
+  )
+};

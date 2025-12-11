@@ -1,5 +1,5 @@
 
-import { CardSchema, CardVariantType } from "@/types/type";
+import { CardSchema, CardVariant } from "@/components/card/types";
 import { ImageTopVariant } from "./ImageTopVariant";
 import { UserProfileVariant } from "./UserProfileVariant";
 import { BgImageVariant } from "./BgImageVariant";
@@ -9,7 +9,7 @@ import { ArticleCardVariant } from "./ArticleCardVariant";
 
 
 interface VariantRendererProps {
-  variant: CardVariantType;
+  variant: CardVariant;
   card: CardSchema;
 }
 
